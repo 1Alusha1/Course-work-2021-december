@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{gentle-kulfi-f24e64.netlify.app/} !-f
+  RewriteCond %{gentle-kulfi-f24e64.netlify.app/} !-d
+  RewriteRule . /index.html [L]
+</IfModule>s

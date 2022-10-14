@@ -1,0 +1,36 @@
+.cards
+    margin-top: 50px
+    .cards__wrap
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+    .card
+        width: 285px
+        margin: 0 15px 50px 15px
+        &__img
+            img
+                width: 285px
+                height: 285px
+        &__body
+            height: auto
+            .artist__name, .track__name
+                font-weight: 600
+                margin-bottom: 10px
+                span
+                    font-weight: normal
+                    font-size: 14px
+
+.cards.card-line
+    overflow-x: hidden
+    overflow-x: scroll
+    .cards__wrap
+        display: flex
+        justify-content: flex-start
+        flex-wrap: nowrap
+        .card
+            width: 100%
+            margin: 0 15px
+
+@media (max-width:768px)
+    .cards__wrap
+        justify-content: center
